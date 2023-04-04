@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Buying Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+section {
+  padding: 2rem;
+}
+
+section#hero {
+  background-color: #ddd;
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#hero h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+section#hero form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+section#hero input[type=text], section#hero input[type=email], section#hero input[type=submit] {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: none;
+  margin-right: 0.5rem;
+}
+
+section#hero input[type=text], section#hero input[type=email] {
+  flex: 1;
+}
+
+section#hero input[type=submit] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+section#hero input[type=submit]:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+section#cars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section#cars h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+section#cars .car {
+  margin-bottom: 2rem;
+  width: calc(33.33% - 1rem);
+  text-align: center;
+  box-shadow: 0 0 5px #ddd;
+  padding: 
+}
+.ab{
+  color: black;
+  font-size: 20px;
+  list-style: disc;
+}
+footer {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  margin: 0 20px;
+  padding: 5px 10px;
+  border: 
+
+</style>
+<body>
+  <header>
+    <div class="logo">
+      <h1>BOBBYFERAN CARS</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Find your perfect car today</h2>
+      <form action="">
+        <input type="text" placeholder="Enter make and model">
+        <input type="text" placeholder="Enter location">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+  </section>
+
+  <section id="cars">
+    <h2>Featured Cars</h2>
+    <div class="car">
+      <img src="./cars pictures/c1.jfif" alt="Car 1">
+      <h3>2022 Ford Mustang</h3>
+      <p>Price: $40,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c3.jfif" alt="Car 2">
+      <h3>2021 Toyota Camry</h3>
+      <p>Price: $25,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c4.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c5.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c6.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c7.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c8.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c9.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c10.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c11.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c12.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c13.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c14.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c15.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c17.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c16.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c18.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c19.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c20.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c21.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="car">
+      <img src="./cars pictures/c22.jfif" alt="Car 3">
+      <h3>2022 Honda Accord</h3>
+      <p>Price: $30,000</p>
+      <a href="#">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p class="ab">Welcome to Bobbyferan Cars, where we pride ourselves on offering the best in quality, style, and performance.
+
+Our vehicles are designed with the driver in mind, and every detail is crafted to provide an unparalleled driving experience. From the sleek and modern exterior to the comfortable and spacious interior, our cars are made to impress.
+
+But we don't just stop at looks. We know that a great car is more than just a pretty face - it's about power, precision, and reliability. That's why our engineers have worked tirelessly to ensure that every Bobbyferan car is packed with cutting-edge technology and top-of-the-line features that will take your driving to the next level.
+
+So whether you're looking for a sporty coupe, a luxurious sedan, or a versatile SUV, we've got you covered. With a wide range of models to choose from, you're sure to find the perfect car to suit your needs and your style.
+
+At Bobbyferan Cars, we believe that the car you drive says a lot about who you are. That's why we're committed to helping you find the car that fits your personality, your lifestyle, and your budget. We're passionate about cars, and we know you are too. That's why we're here to help you every step of the way, from choosing the perfect car to driving off the lot.
+
+So come on in and see for yourself what makes Bobbyferan Cars the ultimate destination for car lovers. Our friendly and knowledgeable staff are here to answer all your questions and help you find the car of your dreams. We can't wait to meet you!
+
+
+
+</p>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <footer>
+    <div class="logo">
+      <h1>BOBBYFERAN CARS</h1>
+      <!-- <footer> -->
+        <div class="container">
+          <h2> OTHER AVAILABLE CARS:</h2>
+          <ul>
+            <li>New Acura MDX</li>
+            <li>New Acura RDX</li>
+            <li>New Audi Q5</li>
+            <li>New BMW 3 Series</li>
+            <li>New BMW X3</li>
+            <li>New Buick Enclave</li>
+            <li>New Cadillac Escalade</li>
+            <li>New Chevrolet Equinox</li>
+            <li>New Chrysler 300</li>
+            <li>New Dodge Challenger</li>
+            <li>New Ford Edge</li>
+            <li>New Jeep Wrangler</li>
+            <li>New Mazda 3</li>
+            <li>New Mazda 6</li>
+            <li>New Mazda CX-5</li>
+            <li>New Nissan Altima</li>
+            <li>New Nissan Maxima</li>
+            <li>New Nissan Rogue</li>
+            <li>New Porsche Cayenne</li>
+            <li>New Ram 1500</li>
+            <li>New Subaru Crosstrek</li>
+            <li>New Subaru Forester</li>
+            <li>New Subaru Impreza</li>
+            <li>Popular Used Sedans</li>
+            <li>Used Chevrolet Malibu</li>
+            <li>Used Chrysler 200</li>
+            <li>Used Dodge Charger</li>
+            <li>Used Ford Fusion</li>
+            <li>Used Ford Taurus</li>
+            <li>Used Honda Accord</li>
+            <li>Used Honda Civic</li>
+            <li>Used Hyundai Elantra</li>
+            <li>Used Hyundai Sonata</li>
+            <li>Used Tesla Model S</li>
+            <li>Used Toyota Camry</li>
+            <li>Used Toyota Corolla</li>
+            <li>Popular Used SUVs</li>
+            <li>Popular Used Pickup Trucks</li>
+            <li>Used Ford F-150</li>
+            <li>Used Nissan Titan</li>
+            <li>Used Toyota Tacoma</li>
+            <li>Popular Used Hatchbacks</li>
+            <li>Used Chevrolet Cruze</li>
+            <li>Used Ford Focus</li>
+            <li>Used Mazda 3</li>
+            <li>Used Mazda 6</li>
+            <li>Used Subaru Impreza</li>
+            <li>Popular Used Minivans</li>
+            <li>Popular Used Coupes</li>
+            <li>Popular Used Wagons</li>
+          </ul>
+          <div class="resources">
+            <h3>Resources For Buying and Selling A Car</h3>
+            <ul>
+              <li>Latest car news</li>
+              <li>Pre-Prod Vehicles</li>
+            </ul>
+          </div>
+        </div>
+      <!-- </footer> -->
+      
+    <!-- </div> -->
+    <!-- <nav>
+      <ul>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="social-media">
+      Facebook Icon
+<a href="https://www.facebook.com/yourpage/" target="_blank" rel="noopener">
+  <i class="fab fa-facebook"></i>
+</a>
+
+Instagram Icon
+<a href="https://www.instagram.com/yourpage/" target="_blank" rel="noopener">
+  <i class="fab fa-instagram"></i>
+</a> -->
+
+    <!-- </div> -->
+  </footer>
+</body>
+</html>
+
